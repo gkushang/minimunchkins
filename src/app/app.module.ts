@@ -10,11 +10,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TopBarComponent } from './top-bar/top-bar.component';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { CarouselComponent } from './carousel/carousel.component';
+
+import { NguCarouselModule } from '@ngu/carousel';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TopBarComponent
+    TopBarComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +32,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatSidenavModule,
     MatToolbarModule,
     FlexLayoutModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NguCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
