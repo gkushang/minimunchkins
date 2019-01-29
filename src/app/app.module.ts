@@ -10,7 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TopBarComponent } from './top-bar/top-bar.component';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { CarouselComponent } from './carousel/carousel.component';
+import { CarouselTileComponent } from './carousel-tile/carousel.tile.component';
 
 import { NguCarouselModule } from '@ngu/carousel';
 
@@ -18,7 +18,7 @@ import { NguCarouselModule } from '@ngu/carousel';
   declarations: [
     AppComponent,
     TopBarComponent,
-    CarouselComponent
+    CarouselTileComponent
   ],
   imports: [
     BrowserModule,
