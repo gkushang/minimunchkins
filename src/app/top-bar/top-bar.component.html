@@ -1,47 +1,43 @@
-<header class="mdc-top-app-bar">
-  <div class="mdc-top-app-bar__row">
+<header class="mdc-top-app-bar"
+        style="background: linear-gradient(45deg, rgba(12,27,61,0.7), rgba(29,80,737,0.7) 100%);">
+  <div class="mdc-top-app-bar__row" >
+
     <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
       <!--<a href="#" class="material-icons mdc-top-app-bar__navigation-icon">menu</a>-->
-      <span class="mdc-top-app-bar__title">Title</span>
+      <img class="logo" src="assets/logo-only-transparant.png" />
+      <span class="mdc-top-app-bar__title title">Mini Munchkins</span>
+      <span class="mdc-top-app-bar__title title" style="font-size: 20px; color: pink">Family Daycare</span>
     </section>
-    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end"
-             fxShow.sm="true"  fxShow.gt-md="true" fxShow="false"
+    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" fxShow.sm="true"  fxShow.gt-md="true" fxShow="false" role="toolbar">
 
-             role="toolbar">
-
-      <a href="#" class="mdc-top-app-bar__action-item">
-      <i class="material-icons">
-        home
-      </i>
-        Home
+      <a href="#" class="mdc-top-app-bar__action-item menu-links">
+        <i class="material-icons" style="margin-right: 5px;">home</i>Home
       </a>
 
-      <!--<a href="#" class="mdc-top-app-bar__action-item">Gallery</a>-->
-      <!--<a href="#" class="mdc-top-app-bar__action-item">Contact</a>-->
-      <!--<a href="#" class="mdc-top-app-bar__action-item">Parents Info</a>-->
+      <a href="#" class="mdc-top-app-bar__action-item menu-links">
+        <i class="material-icons" style="margin-right: 5px;">photo_library</i>Gallery
+      </a>
+
+      <a href="#" class="mdc-top-app-bar__action-item menu-links">
+        <i class="material-icons" style="margin-right: 5px;">person_pin</i>Contact
+      </a>
+
     </section>
   </div>
 
 
   <mat-menu #appMenu="matMenu">
-    <a href="#" class="material-icons mdc-top-app-bar__action-item" aria-label="Download" alt="Download">file_download</a>
-    <a href="#" class="material-icons mdc-top-app-bar__action-item" aria-label="Print this page" alt="Print this page">print</a>
-    <a href="#" class="material-icons mdc-top-app-bar__action-item" aria-label="Bookmark this page" alt="Bookmark this page">bookmark</a>
-    <a href="#" class="material-icons mdc-top-app-bar__action-item" aria-label="Download" alt="Download">file_download</a>
-    <a href="#" class="material-icons mdc-top-app-bar__action-item" aria-label="Print this page" alt="Print this page">print</a>
-    <a href="#" class="material-icons mdc-top-app-bar__action-item" aria-label="Bookmark this page" alt="Bookmark this page">bookmark</a>
-    <a href="#" class="material-icons mdc-top-app-bar__action-item" aria-label="Download" alt="Download">file_download</a>
-    <a href="#" class="material-icons mdc-top-app-bar__action-item" aria-label="Print this page" alt="Print this page">print</a>
-    <a href="#" class="material-icons mdc-top-app-bar__action-item" aria-label="Bookmark this page" alt="Bookmark this page">bookmark</a>
-    <a href="#" class="material-icons mdc-top-app-bar__action-item" aria-label="Download" alt="Download">file_download</a>
-    <a href="#" class="material-icons mdc-top-app-bar__action-item" aria-label="Print this page" alt="Print this page">print</a>
-    <a href="#" class="material-icons mdc-top-app-bar__action-item" aria-label="Bookmark this page" alt="Bookmark this page">bookmark</a>
-    <a href="#" class="material-icons mdc-top-app-bar__action-item" aria-label="Download" alt="Download">file_download</a>
-    <a href="#" class="material-icons mdc-top-app-bar__action-item" aria-label="Print this page" alt="Print this page">print</a>
-    <a href="#" class="material-icons mdc-top-app-bar__action-item" aria-label="Bookmark this page" alt="Bookmark this page">bookmark</a>
+    <a href="#" class="mdc-top-app-bar__action-item menu-links">
+      <i class="material-icons" style="margin-right: 5px;">home</i>Home
+    </a>
 
-    <!--<button mat-menu-item>Settings</button>-->
-    <!--<button mat-menu-item>Help</button>-->
+    <a href="#" class="mdc-top-app-bar__action-item menu-links">
+      <i class="material-icons" style="margin-right: 5px;">photo_library</i>Gallery
+    </a>
+
+    <a href="#" class="mdc-top-app-bar__action-item menu-links">
+      <i class="material-icons" style="margin-right: 5px;">person_pin</i>Contact
+    </a>
   </mat-menu>
 
   <!--<a id="menu-dots" mat-icon-button [matMenuTriggerFor]="appMenu" fxShow.sm="false"  fxShow.gt-md="false" fxShow="true" >-->
