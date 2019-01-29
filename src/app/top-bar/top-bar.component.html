@@ -1,0 +1,55 @@
+<header class="mdc-top-app-bar">
+  <div class="mdc-top-app-bar__row">
+    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+      <!--<a href="#" class="material-icons mdc-top-app-bar__navigation-icon">menu</a>-->
+      <span class="mdc-top-app-bar__title">Title</span>
+    </section>
+    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end"
+             fxShow.sm="true"  fxShow.gt-md="true" fxShow="false"
+
+             role="toolbar">
+
+      <a href="#" class="mdc-top-app-bar__action-item">
+      <i class="material-icons">
+        home
+      </i>
+        Home
+      </a>
+
+      <!--<a href="#" class="mdc-top-app-bar__action-item">Gallery</a>-->
+      <!--<a href="#" class="mdc-top-app-bar__action-item">Contact</a>-->
+      <!--<a href="#" class="mdc-top-app-bar__action-item">Parents Info</a>-->
+    </section>
+  </div>
+
+
+  <mat-menu #appMenu="matMenu">
+    <a href="#" class="material-icons mdc-top-app-bar__action-item" aria-label="Download" alt="Download">file_download</a>
+    <a href="#" class="material-icons mdc-top-app-bar__action-item" aria-label="Print this page" alt="Print this page">print</a>
+    <a href="#" class="material-icons mdc-top-app-bar__action-item" aria-label="Bookmark this page" alt="Bookmark this page">bookmark</a>
+    <a href="#" class="material-icons mdc-top-app-bar__action-item" aria-label="Download" alt="Download">file_download</a>
+    <a href="#" class="material-icons mdc-top-app-bar__action-item" aria-label="Print this page" alt="Print this page">print</a>
+    <a href="#" class="material-icons mdc-top-app-bar__action-item" aria-label="Bookmark this page" alt="Bookmark this page">bookmark</a>
+    <a href="#" class="material-icons mdc-top-app-bar__action-item" aria-label="Download" alt="Download">file_download</a>
+    <a href="#" class="material-icons mdc-top-app-bar__action-item" aria-label="Print this page" alt="Print this page">print</a>
+    <a href="#" class="material-icons mdc-top-app-bar__action-item" aria-label="Bookmark this page" alt="Bookmark this page">bookmark</a>
+    <a href="#" class="material-icons mdc-top-app-bar__action-item" aria-label="Download" alt="Download">file_download</a>
+    <a href="#" class="material-icons mdc-top-app-bar__action-item" aria-label="Print this page" alt="Print this page">print</a>
+    <a href="#" class="material-icons mdc-top-app-bar__action-item" aria-label="Bookmark this page" alt="Bookmark this page">bookmark</a>
+    <a href="#" class="material-icons mdc-top-app-bar__action-item" aria-label="Download" alt="Download">file_download</a>
+    <a href="#" class="material-icons mdc-top-app-bar__action-item" aria-label="Print this page" alt="Print this page">print</a>
+    <a href="#" class="material-icons mdc-top-app-bar__action-item" aria-label="Bookmark this page" alt="Bookmark this page">bookmark</a>
+
+    <!--<button mat-menu-item>Settings</button>-->
+    <!--<button mat-menu-item>Help</button>-->
+  </mat-menu>
+
+  <!--<a id="menu-dots" mat-icon-button [matMenuTriggerFor]="appMenu" fxShow.sm="false"  fxShow.gt-md="false" fxShow="true" >-->
+    <!--<mat-icon>more_vert</mat-icon>-->
+  <!--</a>-->
+
+  <section id="menu-dots" class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start" fxShow.sm="false"  fxShow.gt-md="false" fxShow="true">
+    <a href="#" class="material-icons mdc-top-app-bar__navigation-icon" [matMenuTriggerFor]="appMenu">menu</a>
+  </section>
+
+</header>
