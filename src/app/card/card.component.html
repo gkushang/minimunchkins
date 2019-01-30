@@ -1,23 +1,17 @@
-<div class="card mdl-card mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-shadow--2dp">
-  <div class="mdl-card__media">
-    <img class="article-image" src="{{backgroundImage}}" border="0" alt="">
-  </div>
-
+<div class="card mdl-card mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-shadow--2dp  mdc-card__primary-action">
   <a href={{targetLink}} target="_blank" style="text-decoration: none;">
 
+  <div class="mdl-card__media">
+    <div class="mdc-card__media contact-card__media profile-image" >
+      <div class="mdc-card__media-content" [ngStyle]="imageStyles">{{ imageTitle }}</div>
+    </div>
+    <img class="article-image" src="{{backgroundImage}}" border="0" alt="">
+  </div>
     <!--<figure class="mdl-card__media">-->
       <!--<img src={{image}} alt=""/>-->
       <!--<div class="mdc-card__media-content" [ngStyle]="imageStyles">{{imageTitle}}</div>-->
     <!--</figure>-->
 
-    <div class="mdc-card__media
-    contact-card__media
-    profile-image
-    mdc-card__primary-action" >
-      <a href="{{targetLink}}" target="_blank">
-        <div class="mdc-card__media-content" [ngStyle]="imageStyles">{{ imageTitle }}</div>
-      </a>
-    </div>
 
     <div class="mdc-card__primary-action">
       <div class="mdl-card__title card-middle-bar ">
@@ -28,7 +22,7 @@
         <p>{{ supportingText }}</p>
       </div>
     </div>
-  </a>
+
 
   <div class="mdc-card__actions card-action-bar">
     <div class="mdc-card__action-buttons">
@@ -47,6 +41,7 @@
     </div>
 
   </div>
+  </a>
 
 </div>
 
