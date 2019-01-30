@@ -8,7 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "ng build --prod --base-href 'https://gkushang.github.io/minimunchkins/' && ngh --message 'deploy website' --dir 'dist/minimunchkins'"
+    "deploy": "ng build --prod --base-href 'https://gkushang.github.io/minimunchkins/' && ngh --message 'deploy website' --dir 'dist/minimunchkins'",
+    "push": "git add . && git commit -m 'mini munckins' && git push"
   },
   "private": true,
   "dependencies": {
