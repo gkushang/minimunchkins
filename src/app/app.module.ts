@@ -14,13 +14,15 @@ import { CarouselTileComponent } from './carousel-tile/carousel.tile.component';
 
 import { NguCarouselModule } from '@ngu/carousel';
 import { GoogleMapComponent } from './google-map/google-map.component';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopBarComponent,
     CarouselTileComponent,
-    GoogleMapComponent
+    GoogleMapComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,

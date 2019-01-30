@@ -1,0 +1,36 @@
+.mdl-card__media {
+  margin: 0;
+  height: 10vw; }
+
+.mdl-card__media > img {
+  max-width: 100%; }
+
+.card {
+  background-color: white;
+  max-width: 100%; }
+
+.card-action-bar {
+  background-color: darkolivegreen; }
+
+.profile-image {
+  max-width: 100%;
+  background-size: center / cover; }
+
+.mat-card img {
+  object-fit: cover;
+  /*this makes de image in src fit to the size of specified below*/
+  width: 100%;
+  /* Here you can use wherever you want to specify the width and also the height of the <img>*/
+  height: 80%; }
+
+.card-middle-bar {
+  padding-left: 0.8rem;
+  color: darkorchid; }
+
+.card-action-bar-elements {
+  color: lightgreen; }
+
+.mdc-card__primary-action.mdc-ripple-upgraded {
+  --mdc-ripple-fg-opacity: 10.46; }
+
+/*# sourceMappingURL=card.component.css.map */

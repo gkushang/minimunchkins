@@ -1,17 +1,8 @@
-@import "~@material/card/mdc-card";
-@import "~@material/layout-grid/mdc-layout-grid";
-@import "~@material/button/mdc-button";
 
 .put-center {
   max-width: 1280px;
   padding: 100px;
   margin-top: -150px;
-}
-
-.location-card__media {
-  height: 175px;
-  background-size: cover !important;
-  background: url("/assets/map.png");
 }
 
 .contact-card__media {
@@ -20,54 +11,17 @@
   background: url("/assets/contact.jpg");
 }
 
-.contact-card {
-  max-height: 500px;
-  max-width: 1000px;
-}
 
-.demo-card__primary {
-  padding-left: 1rem;
-}
 
-.mdc-typography--headline6 {
-  font-family: 'Coiny', cursive;
-  font-size: 1.5vw;
-  letter-spacing: .0155em;
-  font-weight: 100;
-  color: red;
-}
 
-.mdc-typography--body2, .mdc-typography--caption {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  line-height: 1.25rem;
-  font-weight: 400;
-  text-decoration: inherit;
-  text-transform: inherit;
-}
 
-.card-icons {
-  //padding-right: 5px;
-  color: aqua;
-}
 
-@media only screen
-and (min-device-width: 320px)
-and (max-device-width: 480px)
-and (-webkit-min-device-pixel-ratio: 2) {
-  .get-direction {
-    font-size: 10px;
-    color: blanchedalmond;
-  }
-}
+//.mdc-typography--body2, .mdc-typography--caption {
+//  -moz-osx-font-smoothing: grayscale;
+//  -webkit-font-smoothing: antialiased;
+//  line-height: 1.25rem;
+//  font-weight: 400;
+//  text-decoration: inherit;
+//  text-transform: inherit;
+//}
 
-@media screen
-and (min-device-width: 1200px)
-and (max-device-width: 1600px)
-and (-webkit-min-device-pixel-ratio: 2)
-and (min-resolution: 192dpi) {
-  .get-direction {
-    font-size: 15px;
-    color: blanchedalmond;
-  }
-}

@@ -1,0 +1,83 @@
+<div class="card mdl-card mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-shadow--2dp">
+  <div class="mdl-card__media">
+    <img class="article-image" src="{{backgroundImage}}" border="0" alt="">
+  </div>
+
+  <a href={{targetLink}} target="_blank" style="text-decoration: none;">
+
+    <!--<figure class="mdl-card__media">-->
+      <!--<img src={{image}} alt=""/>-->
+      <!--<div class="mdc-card__media-content" [ngStyle]="imageStyles">{{imageTitle}}</div>-->
+    <!--</figure>-->
+
+    <div class="mdc-card__media
+    contact-card__media
+    profile-image
+    mdc-card__primary-action" >
+      <a href="{{targetLink}}" target="_blank">
+        <div class="mdc-card__media-content" [ngStyle]="imageStyles">{{ imageTitle }}</div>
+      </a>
+    </div>
+
+    <div class="mdc-card__primary-action">
+      <div class="mdl-card__title card-middle-bar ">
+        <h2 class="mdl-card__title-text">{{title}}</h2>
+      </div>
+
+      <div class="mdl-card__supporting-text card-middle-bar">
+        <p>{{ supportingText }}</p>
+      </div>
+    </div>
+  </a>
+
+  <div class="mdc-card__actions card-action-bar">
+    <div class="mdc-card__action-buttons">
+      <a href="{{ targetLink }}" target="_blank"
+        style="text-decoration: none;">
+        <button class="mdc-button mdc-card__action-buttons mdc-card__action--button" >
+          <span class="mdc-button__label card-button card-action-bar-elements" >{{ buttonText }}</span>
+        </button>
+        </a>
+    </div>
+
+    <div class="mdc-card__action-icons">
+      <a href="{{ targetLink }}" target="_blank">
+        <mat-icon class="card-icons card-action-bar-elements">{{icon}}</mat-icon>
+      </a>
+    </div>
+
+  </div>
+
+</div>
+
+<!--<div class="mdc-card mdl-shadow&#45;&#45;16dp contact-card">-->
+
+  <!--<div class="mdl-card__media mdl-color-text&#45;&#45;grey-50 mdc-card__primary-action">-->
+    <!--<div class="mdc-card__media mdc-card__media&#45;&#45;square location-card__media mdc-card__media&#45;&#45;16-9">-->
+      <!--<a href="https://www.google.com/maps/place/Mini+Munchkins+Family+Daycare/data=!3m1!4b1!4m2!3m1!1s0x89e4773ce0abbca1:0x36c87230d478bd98" target="_blank">-->
+        <!--<div class="mdc-card__media-content" style="color: blue; padding: 10px">Location</div>-->
+      <!--</a>-->
+    <!--</div>-->
+    <!--<div class="demo-card__primary">-->
+      <!--<h2 class="demo-card__title mdc-typography&#45;&#45;headline6" style="height: 10%">41 Northway St, Holliston, MA 01746</h2>-->
+    <!--</div>-->
+  <!--</div>-->
+
+  <!--<div class="mdc-card__actions" style="background-color: darkolivegreen">-->
+    <!--<div class="mdc-card__action-buttons">-->
+      <!--<a href="https://www.google.com/maps/place/Mini+Munchkins+Family+Daycare/data=!3m1!4b1!4m2!3m1!1s0x89e4773ce0abbca1:0x36c87230d478bd98" target="_blank"-->
+         <!--style="text-decoration: none;">-->
+        <!--<button class="mdc-button mdc-card__action-buttons mdc-card__action&#45;&#45;button" >-->
+          <!--<span class="mdc-button__label card-button" >GET DIRECTIONS</span>-->
+        <!--</button>-->
+      <!--</a>-->
+    <!--</div>-->
+
+    <!--<div class="mdc-card__action-icons">-->
+      <!--<a href="https://www.google.com/maps/place/Mini+Munchkins+Family+Daycare/data=!3m1!4b1!4m2!3m1!1s0x89e4773ce0abbca1:0x36c87230d478bd98" target="_blank">-->
+        <!--<mat-icon class="card-icons">directions</mat-icon>-->
+      <!--</a>-->
+    <!--</div>-->
+
+  <!--</div>-->
+<!--</div>-->

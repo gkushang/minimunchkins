@@ -3,81 +3,33 @@
 
   <div class="mdc-layout-grid__inner">
 
-    <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-6">
-
-      <div class="mdc-card contact-card">
-
-        <div class="mdc-card__primary-action">
-            <div class="mdc-card__media mdc-card__media--square location-card__media mdc-card__media--16-9">
-              <a href="https://www.google.com/maps/place/Mini+Munchkins+Family+Daycare/data=!3m1!4b1!4m2!3m1!1s0x89e4773ce0abbca1:0x36c87230d478bd98" target="_blank">
-                <div class="mdc-card__media-content" style="color: blue; padding: 10px">Location</div>
-              </a>
-            </div>
-          <div class="demo-card__primary">
-            <h2 class="demo-card__title mdc-typography--headline6" style="height: 10%">41 Northway St, Holliston, MA 01746</h2>
-          </div>
-        </div>
-
-        <div class="mdc-card__actions" style="background-color: darkolivegreen">
-          <div class="mdc-card__action-buttons">
-            <a href="https://www.google.com/maps/place/Mini+Munchkins+Family+Daycare/data=!3m1!4b1!4m2!3m1!1s0x89e4773ce0abbca1:0x36c87230d478bd98" target="_blank"
-               style="text-decoration: none;">
-            <button class="mdc-button mdc-card__action-buttons mdc-card__action--button" >
-              <span class="mdc-button__label get-direction" >GET DIRECTIONS</span>
-            </button>
-            </a>
-          </div>
-
-          <div class="mdc-card__action-icons">
-            <a href="https://www.google.com/maps/place/Mini+Munchkins+Family+Daycare/data=!3m1!4b1!4m2!3m1!1s0x89e4773ce0abbca1:0x36c87230d478bd98" target="_blank">
-              <mat-icon class="card-icons">directions</mat-icon>
-            </a>
-          </div>
-
-        </div>
-      </div>
+    <div class="demo-cell mdc-layout-grid__cell mdl-cell mdl-cell--8-col mdl-cell--6-col-desktop">
+      <app-card
+        image="/assets/map.png"
+        title="Address"
+        supportingText="41 Northway St, Holliston, MA 01746"
+        buttonText="Get Directions"
+        targetLink="https://www.google.com/maps/place/Mini+Munchkins+Family+Daycare/data=!3m1!4b1!4m2!3m1!1s0x89e4773ce0abbca1:0x36c87230d478bd98"
+        icon=directions
+        imageTitle="Location"
+        imageTitleColor=blue
+        backgroundImage="/assets/map.png"
+        >
+      </app-card>
     </div>
 
-    <div class="demo-cell mdc-layout-grid__cell mdc-layout-grid__cell--span-6">
-
-      <div class="mdc-card contact-card">
-
-        <div class="mdc-card__primary-action">
-          <div class="mdc-card__media mdc-card__media--square contact-card__media mdc-card__media--16-9">
-            <a href="https://www.google.com/maps/place/Mini+Munchkins+Family+Daycare/data=!3m1!4b1!4m2!3m1!1s0x89e4773ce0abbca1:0x36c87230d478bd98" target="_blank">
-              <div class="mdc-card__media-content" style="color: white; padding: 10px">Contact</div>
-            </a>
-          </div>
-          <div class="demo-card__primary">
-            <h2 class="demo-card__title mdc-typography--headline6" style="height: 10%">(510) 502 7156
-              <span class="demo-card__secondary mdc-typography--body2" style="color: darkblue; padding: 10px; font-size: 1vw; float: right;">info@minimunchkinsfamilydaycare.com</span>
-            </h2>
-          </div>
-
-        </div>
-
-        <div class="mdc-card__actions" style="background-color: darkolivegreen">
-          <!--<div class="mdc-card__action-buttons">-->
-            <!--<a href="https://www.google.com/maps/place/Mini+Munchkins+Family+Daycare/data=!3m1!4b1!4m2!3m1!1s0x89e4773ce0abbca1:0x36c87230d478bd98" target="_blank"-->
-               <!--style="text-decoration: none;">-->
-              <!--<button class="mdc-button mdc-card__action-buttons mdc-card__action&#45;&#45;button" >-->
-                <!--&lt;!&ndash;<span class="mdc-button__label" style="font-size: 0.7vw; color: blanchedalmond">info@minimunchkinsfamilydaycare.com</span>&ndash;&gt;-->
-              <!--</button>-->
-            <!--</a>-->
-          <!--</div>-->
-
-          <div class="mdc-card__action-icons">
-            <button class="mdc-button mdc-card__action mdc-card__action--button" >
-              <mat-icon class="card-icons">call</mat-icon>
-              <!--<span class="mdc-button__label">CALL</span>-->
-            </button>
-            <button class="mdc-button mdc-card__action mdc-card__action--button" >
-              <mat-icon class="card-icons">email</mat-icon>
-              <!--<span class="mdc-button__label">EMAIL</span>-->
-            </button>
-          </div>
-
-        </div>
-      </div>
+    <div class="demo-cell mdc-layout-grid__cell mdl-cell mdl-cell--4-col mdl-cell--6-col-desktop">
+      <app-card
+        image="/assets/contact.jpg"
+        title="(510) 502 7156"
+        supportingText="info@minimunchkinsfamilydaycare.com"
+        buttonText="CALL"
+        targetLink="https://www.google.com/maps/place/Mini+Munchkins+Family+Daycare/data=!3m1!4b1!4m2!3m1!1s0x89e4773ce0abbca1:0x36c87230d478bd98"
+        icon="call"
+        imageTitle="Contact"
+        imageTitleColor=white
+        backgroundImage="/assets/contact.jpg"
+        >
+      </app-card>
     </div>
 </div>
