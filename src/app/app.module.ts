@@ -13,12 +13,14 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { CarouselTileComponent } from './carousel-tile/carousel.tile.component';
 
 import { NguCarouselModule } from '@ngu/carousel';
+import { GoogleMapComponent } from './google-map/google-map.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopBarComponent,
-    CarouselTileComponent
+    CarouselTileComponent,
+    GoogleMapComponent
   ],
   imports: [
     BrowserModule,
