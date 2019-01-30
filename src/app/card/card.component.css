@@ -5,16 +5,15 @@
 .mdl-card__media > img {
   max-width: 100%; }
 
+.mdc-card__primary-action:hover {
+  opacity: 0.7; }
+
 .card {
   background-color: white;
   max-width: 100%; }
 
 .card-action-bar {
   background-color: darkolivegreen; }
-
-.profile-image {
-  max-width: 100%;
-  background-size: center / cover; }
 
 .mat-card img {
   object-fit: cover;
@@ -32,5 +31,10 @@
 
 .mdc-card__primary-action.mdc-ripple-upgraded {
   --mdc-ripple-fg-opacity: 10.46; }
+
+.mdc-card__media-content {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px; }
 
 /*# sourceMappingURL=card.component.css.map */

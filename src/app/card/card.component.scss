@@ -3,10 +3,16 @@
   height: 10vw;
 }
 
-.mdl-card__media>img {
+.mdl-card__media > img {
   max-width: 100%;
 }
 
+.mdc-card__primary-action:hover {
+  opacity: 0.7;
+}
+
+.article-image {
+}
 .card {
   background-color: white;
   max-width:100%;
@@ -14,11 +20,6 @@
 }
 .card-action-bar {
   background-color: darkolivegreen;
-}
-
-.profile-image {
-  max-width: 100%;
-  background-size: center / cover;
 }
 
 .mat-card img{
@@ -40,10 +41,10 @@
   --mdc-ripple-fg-opacity: 10.46;
 }
 
-.contact-card__media {
-  //height: 150px;
-  //background-size: cover !important;
-  //background: url("/assets/contact.jpg");
+.mdc-card__media-content {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 
