@@ -47,11 +47,15 @@
   z-index: 11;
   left: 0;
   bottom: 5%;
+  //display: table;
 }
 
 .quick-float .quick-float-icon {
   height: 30px;
   cursor: pointer;
+  //margin-top: 1rem;
   margin-left: 1rem;
   transition: all .4s;
+  //display: table-cell;
+  //vertical-align: middle;
 }
