@@ -4,10 +4,10 @@ Error: File to import not found or unreadable: ~@material/top-app-bar/mdc-top-ap
 
 1: @import "~@material/top-app-bar/mdc-top-app-bar";
 2: 
-3: #menu-dots {
-4:   position: fixed;
-5:   right: 0;
-6: }
+3: .app-top-bar {
+4:   background: linear-gradient(45deg, rgba(12,27,61,0.7), rgba(29,80,737,0.7) 100%);
+5: }
+6: 
 
 Backtrace:
 top-bar.component.scss:1
@@ -53,4 +53,4 @@ top-bar.component.scss:1
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: ~@material/top-app-bar/mdc-top-app-bar.\A         on line 1 of top-bar.component.scss\A \A 1: @import \"~@material/top-app-bar/mdc-top-app-bar\";\A 2: \A 3: #menu-dots {\A 4:   position: fixed;\A 5:   right: 0;\A 6: }"; }
+  content: "Error: File to import not found or unreadable: ~@material/top-app-bar/mdc-top-app-bar.\A         on line 1 of top-bar.component.scss\A \A 1: @import \"~@material/top-app-bar/mdc-top-app-bar\";\A 2: \A 3: .app-top-bar {\A 4:   background: linear-gradient(45deg, rgba(12,27,61,0.7), rgba(29,80,737,0.7) 100%);\A 5: }\A 6: "; }
