@@ -1,3 +1,9 @@
+@import "~@material/card/mdc-card";
+
+.card-content {
+  background-color:  rgba(211, 211, 211, 0.9);
+}
+
 .mdl-card__media {
   margin: 0;
   height: 10vw;
@@ -7,38 +13,28 @@
   max-width: 100%;
 }
 
-.mdc-card__primary-action:hover {
-  opacity: 0.7;
+.mdc-card:hover {
+  opacity: 1;
 }
 
-.article-image {
-}
 .card {
   background-color: white;
   max-width:100%;
-  //max-height:100%;
 }
+
 .card-action-bar {
   background-color: darkolivegreen;
 }
 
-.mat-card img{
-  object-fit: cover; /*this makes de image in src fit to the size of specified below*/
-  width: 100%; /* Here you can use wherever you want to specify the width and also the height of the <img>*/
-  height: 80%;
-}
 
 .card-middle-bar {
   padding-left: 0.8rem;
-  color: darkorchid;
+  color: darkgreen;
+  font-size: 12px;
 }
 
 .card-action-bar-elements {
   color: lightgreen;
-}
-
-.mdc-card__primary-action.mdc-ripple-upgraded {
-  --mdc-ripple-fg-opacity: 10.46;
 }
 
 .mdc-card__media-content {
@@ -46,48 +42,3 @@
   font-weight: bold;
   letter-spacing: 1px;
 }
-
-
-//.location-card__media {
-//  height: 175px;
-//  background-size: cover !important;
-//  background: url("/assets/map.png");
-//}
-//
-//.card-icons {
-//  padding-right: 5px;
-//  color: aqua;
-//}
-//
-//.mdc-typography--headline6 {
-//  font-family: 'Josefin Slab', serif;
-//  font-size: 1.5vw;
-//  letter-spacing: .0155em;
-//  font-weight: bold;
-//  color: red;
-//}
-//
-//.demo-card__primary {
-//  padding-left: 1rem;
-//}
-//
-//@media only screen
-//and (min-device-width: 320px)
-//and (max-device-width: 480px)
-//and (-webkit-min-device-pixel-ratio: 2) {
-//  .card-button {
-//    font-size: 10px;
-//    color: blanchedalmond;
-//  }
-//}
-//
-//@media screen
-//and (min-device-width: 1200px)
-//and (max-device-width: 1600px)
-//and (-webkit-min-device-pixel-ratio: 2)
-//and (min-resolution: 192dpi) {
-//  .card-button {
-//    font-size: 15px;
-//    color: blanchedalmond;
-//  }
-//}

@@ -1,38 +1,27 @@
-<div class="card mdl-card mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-shadow--2dp  mdc-card__primary-action">
-  <a href={{targetLink}} target="_blank" style="text-decoration: none;">
+<!-- Wide card with share menu button -->
+<div class="mdc-card">
+  <div class="mdc-card__media mdc-card__media--16-9" [ngStyle]="mediaStyle" >
+    <div class="mdc-card__media-content" [ngStyle]="imageStyles">{{imageTitle}}</div>
 
-  <div class="mdl-card__media">
-    <div class="mdc-card__media contact-card__media profile-image" >
-      <div class="mdc-card__media-content" [ngStyle]="imageStyles">{{ imageTitle }}</div>
-    </div>
-    <img class="article-image" src="{{backgroundImage}}" border="0" alt="">
-  </div>
-    <!--<figure class="mdl-card__media">-->
-      <!--<img src={{image}} alt=""/>-->
-      <!--<div class="mdc-card__media-content" [ngStyle]="imageStyles">{{imageTitle}}</div>-->
-    <!--</figure>-->
-
-
-    <div class="mdc-card__primary-action">
+    <div class="mdc-card__primary-action card-content">
       <div class="mdl-card__title card-middle-bar ">
-        <h2 class="mdl-card__title-text">{{title}}</h2>
+        <h2 class="mdl-card__title-text">{{ title }}</h2>
       </div>
 
-      <div class="mdl-card__supporting-text card-middle-bar">
+      <div *ngIf="supportingText" class="mdl-card__supporting-text card-middle-bar">
         <p>{{ supportingText }}</p>
       </div>
     </div>
 
 
-  <div class="mdc-card__actions card-action-bar">
-    <div class="mdc-card__action-buttons">
-      <a href="{{ targetLink }}" target="_blank"
-        style="text-decoration: none;">
-        <button class="mdc-button mdc-card__action-buttons mdc-card__action--button" >
-          <span class="mdc-button__label card-button card-action-bar-elements" >{{ buttonText }}</span>
-        </button>
+    <div class="mdc-card__actions card-action-bar">
+      <div class="mdc-card__action-buttons">
+        <a href="{{ targetLink }}" target="_blank" style="text-decoration: none;">
+          <button class="mdc-button mdc-card__action-buttons mdc-card__action--button" >
+            <span class="mdc-button__label card-button card-action-bar-elements" >{{ buttonText }}</span>
+          </button>
         </a>
-    </div>
+      </div>
 
     <div class="mdc-card__action-icons">
       <a href="{{ targetLink }}" target="_blank">
@@ -40,39 +29,112 @@
       </a>
     </div>
 
-  </div>
-  </a>
+    </div>
 
+
+  </div>
 </div>
 
-<!--<div class="mdc-card mdl-shadow&#45;&#45;16dp contact-card">-->
+<!--<div class="demo-card-wide mdl-card mdl-cell mdl-cell&#45;&#45;6-col mdl-cell&#45;&#45;4-col-tablet mdc-card__primary-action mdl-shadow&#45;&#45;16dp">-->
 
-  <!--<div class="mdl-card__media mdl-color-text&#45;&#45;grey-50 mdc-card__primary-action">-->
-    <!--<div class="mdc-card__media mdc-card__media&#45;&#45;square location-card__media mdc-card__media&#45;&#45;16-9">-->
-      <!--<a href="https://www.google.com/maps/place/Mini+Munchkins+Family+Daycare/data=!3m1!4b1!4m2!3m1!1s0x89e4773ce0abbca1:0x36c87230d478bd98" target="_blank">-->
-        <!--<div class="mdc-card__media-content" style="color: blue; padding: 10px">Location</div>-->
-      <!--</a>-->
-    <!--</div>-->
-    <!--<div class="demo-card__primary">-->
-      <!--<h2 class="demo-card__title mdc-typography&#45;&#45;headline6" style="height: 10%">41 Northway St, Holliston, MA 01746</h2>-->
-    <!--</div>-->
+
+  <!--<div class="mdl-card__title">-->
+    <!--<h2 class="mdl-card__title-text" [ngStyle]="imageStyles">{{imageTitle}}</h2>-->
   <!--</div>-->
 
-  <!--<div class="mdc-card__actions" style="background-color: darkolivegreen">-->
+  <!--<div class="mdl-card__supporting-text"> {{supportingText}}  </div>-->
+
+  <!--<div class="mdl-card__actions mdl-card&#45;&#45;border">-->
+    <!--<a class="mdl-button mdl-button&#45;&#45;colored mdl-js-button mdl-js-ripple-effect">-->
+      <!--Get Started-->
+    <!--</a>-->
+  <!--</div>-->
+
+  <!--<div class="mdl-card__menu">-->
+    <!--<button class="mdl-button mdl-button&#45;&#45;icon mdl-js-button mdl-js-ripple-effect">-->
+      <!--<i class="material-icons">share</i>-->
+    <!--</button>-->
+  <!--</div>-->
+<!--</div>-->
+
+
+
+<!--<div class="card mdl-card mdl-cell mdl-cell&#45;&#45;6-col mdl-cell&#45;&#45;4-col-tablet mdl-shadow&#45;&#45;2dp  mdc-card__primary-action">-->
+  <!--<a href={{targetLink}} target="_blank" style="text-decoration: none;">-->
+
+  <!--<div class="mdl-card__media">-->
+    <!--<div class="mdc-card__media contact-card__media profile-image" >-->
+      <!--<div class="mdc-card__media-content" [ngStyle]="imageStyles">{{ imageTitle }}</div>-->
+    <!--</div>-->
+    <!--<img class="article-image" src="{{backgroundImage}}" border="0" alt="">-->
+  <!--</div>-->
+
+    <!--&lt;!&ndash;<figure class="mdl-card__media">&ndash;&gt;-->
+      <!--&lt;!&ndash;<img src={{image}} alt=""/>&ndash;&gt;-->
+      <!--&lt;!&ndash;<div class="mdc-card__media-content" [ngStyle]="imageStyles">{{imageTitle}}</div>&ndash;&gt;-->
+    <!--&lt;!&ndash;</figure>&ndash;&gt;-->
+
+
+    <!--<div class="mdc-card__primary-action">-->
+      <!--<div class="mdl-card__title card-middle-bar ">-->
+        <!--<h2 class="mdl-card__title-text">{{title}}</h2>-->
+      <!--</div>-->
+
+      <!--<div class="mdl-card__supporting-text card-middle-bar">-->
+        <!--<p>{{ supportingText }}</p>-->
+      <!--</div>-->
+    <!--</div>-->
+
+
+  <!--<div class="mdc-card__actions card-action-bar">-->
     <!--<div class="mdc-card__action-buttons">-->
-      <!--<a href="https://www.google.com/maps/place/Mini+Munchkins+Family+Daycare/data=!3m1!4b1!4m2!3m1!1s0x89e4773ce0abbca1:0x36c87230d478bd98" target="_blank"-->
-         <!--style="text-decoration: none;">-->
+      <!--<a href="{{ targetLink }}" target="_blank"-->
+        <!--style="text-decoration: none;">-->
         <!--<button class="mdc-button mdc-card__action-buttons mdc-card__action&#45;&#45;button" >-->
-          <!--<span class="mdc-button__label card-button" >GET DIRECTIONS</span>-->
+          <!--<span class="mdc-button__label card-button card-action-bar-elements" >{{ buttonText }}</span>-->
         <!--</button>-->
-      <!--</a>-->
+        <!--</a>-->
     <!--</div>-->
 
     <!--<div class="mdc-card__action-icons">-->
-      <!--<a href="https://www.google.com/maps/place/Mini+Munchkins+Family+Daycare/data=!3m1!4b1!4m2!3m1!1s0x89e4773ce0abbca1:0x36c87230d478bd98" target="_blank">-->
-        <!--<mat-icon class="card-icons">directions</mat-icon>-->
+      <!--<a href="{{ targetLink }}" target="_blank">-->
+        <!--<mat-icon class="card-icons card-action-bar-elements">{{icon}}</mat-icon>-->
       <!--</a>-->
     <!--</div>-->
 
   <!--</div>-->
+  <!--</a>-->
+
 <!--</div>-->
+
+<!--&lt;!&ndash;<div class="mdc-card mdl-shadow&#45;&#45;16dp contact-card">&ndash;&gt;-->
+
+  <!--&lt;!&ndash;<div class="mdl-card__media mdl-color-text&#45;&#45;grey-50 mdc-card__primary-action">&ndash;&gt;-->
+    <!--&lt;!&ndash;<div class="mdc-card__media mdc-card__media&#45;&#45;square location-card__media mdc-card__media&#45;&#45;16-9">&ndash;&gt;-->
+      <!--&lt;!&ndash;<a href="https://www.google.com/maps/place/Mini+Munchkins+Family+Daycare/data=!3m1!4b1!4m2!3m1!1s0x89e4773ce0abbca1:0x36c87230d478bd98" target="_blank">&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="mdc-card__media-content" style="color: blue; padding: 10px">Location</div>&ndash;&gt;-->
+      <!--&lt;!&ndash;</a>&ndash;&gt;-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+    <!--&lt;!&ndash;<div class="demo-card__primary">&ndash;&gt;-->
+      <!--&lt;!&ndash;<h2 class="demo-card__title mdc-typography&#45;&#45;headline6" style="height: 10%">41 Northway St, Holliston, MA 01746</h2>&ndash;&gt;-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+  <!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+  <!--&lt;!&ndash;<div class="mdc-card__actions" style="background-color: darkolivegreen">&ndash;&gt;-->
+    <!--&lt;!&ndash;<div class="mdc-card__action-buttons">&ndash;&gt;-->
+      <!--&lt;!&ndash;<a href="https://www.google.com/maps/place/Mini+Munchkins+Family+Daycare/data=!3m1!4b1!4m2!3m1!1s0x89e4773ce0abbca1:0x36c87230d478bd98" target="_blank"&ndash;&gt;-->
+         <!--&lt;!&ndash;style="text-decoration: none;">&ndash;&gt;-->
+        <!--&lt;!&ndash;<button class="mdc-button mdc-card__action-buttons mdc-card__action&#45;&#45;button" >&ndash;&gt;-->
+          <!--&lt;!&ndash;<span class="mdc-button__label card-button" >GET DIRECTIONS</span>&ndash;&gt;-->
+        <!--&lt;!&ndash;</button>&ndash;&gt;-->
+      <!--&lt;!&ndash;</a>&ndash;&gt;-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<div class="mdc-card__action-icons">&ndash;&gt;-->
+      <!--&lt;!&ndash;<a href="https://www.google.com/maps/place/Mini+Munchkins+Family+Daycare/data=!3m1!4b1!4m2!3m1!1s0x89e4773ce0abbca1:0x36c87230d478bd98" target="_blank">&ndash;&gt;-->
+        <!--&lt;!&ndash;<mat-icon class="card-icons">directions</mat-icon>&ndash;&gt;-->
+      <!--&lt;!&ndash;</a>&ndash;&gt;-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+  <!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->

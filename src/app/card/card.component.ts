@@ -23,11 +23,11 @@ export class CardComponent implements OnInit {
 
   ngOnInit() {
     this.mediaStyle = {
-      'background': 'url(' + this.backgroundImage + ')',
-      'max-width': '100%'
+      'background': 'url(' + this.backgroundImage + ') center / cover',
     };
 
     this.imageStyles = {
+      'font-family': '\'Josefin Slab\', serif;',
       'padding': '0.8rem',
       'color': this.imageTitleColor
     };

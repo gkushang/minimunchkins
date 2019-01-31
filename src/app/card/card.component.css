@@ -1,40 +1,56 @@
-.mdl-card__media {
-  margin: 0;
-  height: 10vw; }
+/*
+Error: File to import not found or unreadable: ~@material/card/mdc-card.
+        on line 1 of card.component.scss
 
-.mdl-card__media > img {
-  max-width: 100%; }
+1: @import "~@material/card/mdc-card";
+2: 
+3: .card-content {
+4:   background-color:  rgba(211, 211, 211, 0.9);
+5: }
+6: 
 
-.mdc-card__primary-action:hover {
-  opacity: 0.7; }
-
-.card {
-  background-color: white;
-  max-width: 100%; }
-
-.card-action-bar {
-  background-color: darkolivegreen; }
-
-.mat-card img {
-  object-fit: cover;
-  /*this makes de image in src fit to the size of specified below*/
-  width: 100%;
-  /* Here you can use wherever you want to specify the width and also the height of the <img>*/
-  height: 80%; }
-
-.card-middle-bar {
-  padding-left: 0.8rem;
-  color: darkorchid; }
-
-.card-action-bar-elements {
-  color: lightgreen; }
-
-.mdc-card__primary-action.mdc-ripple-upgraded {
-  --mdc-ripple-fg-opacity: 10.46; }
-
-.mdc-card__media-content {
-  font-size: 20px;
-  font-weight: bold;
-  letter-spacing: 1px; }
-
-/*# sourceMappingURL=card.component.css.map */
+Backtrace:
+card.component.scss:1
+/Users/kgajjar/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.5.7/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/Users/kgajjar/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.5.7/lib/sass/tree/import_node.rb:45:in `import'
+/Users/kgajjar/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.5.7/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Users/kgajjar/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.5.7/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Users/kgajjar/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:310:in `visit_import'
+/Users/kgajjar/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/kgajjar/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/kgajjar/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.5.7/lib/sass/stack.rb:79:in `block in with_base'
+/Users/kgajjar/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.5.7/lib/sass/stack.rb:135:in `with_frame'
+/Users/kgajjar/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.5.7/lib/sass/stack.rb:79:in `with_base'
+/Users/kgajjar/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/kgajjar/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/kgajjar/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/kgajjar/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/kgajjar/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Users/kgajjar/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/kgajjar/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Users/kgajjar/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/kgajjar/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Users/kgajjar/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/kgajjar/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Users/kgajjar/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Users/kgajjar/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.5.7/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/kgajjar/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.5.7/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/kgajjar/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.5.7/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Users/kgajjar/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.5.7/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Users/kgajjar/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/Users/kgajjar/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/kgajjar/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/kgajjar/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/kgajjar/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.5.7/lib/sass/plugin.rb:82:in `update_stylesheets'
+/Users/kgajjar/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.5.7/lib/sass/exec/sass_scss.rb:338:in `watch_or_update'
+/Users/kgajjar/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.5.7/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/Users/kgajjar/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.5.7/lib/sass/exec/base.rb:50:in `parse'
+/Users/kgajjar/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.5.7/lib/sass/exec/base.rb:18:in `parse!'
+/Users/kgajjar/.rvm/gems/ruby-1.9.3-p551/gems/sass-3.5.7/bin/scss:13:in `<top (required)>'
+/Users/kgajjar/.rvm/gems/ruby-1.9.3-p551/bin/scss:23:in `load'
+/Users/kgajjar/.rvm/gems/ruby-1.9.3-p551/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: ~@material/card/mdc-card.\A         on line 1 of card.component.scss\A \A 1: @import \"~@material/card/mdc-card\";\A 2: \A 3: .card-content {\A 4:   background-color:  rgba(211, 211, 211, 0.9);\A 5: }\A 6: "; }
