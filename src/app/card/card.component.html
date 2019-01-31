@@ -3,7 +3,9 @@
   <div class="mdc-card__media mdc-card__media--16-9" [ngStyle]="mediaStyle" >
     <div class="mdc-card__media-content" [ngStyle]="imageStyles">{{imageTitle}}</div>
 
-    <div class="mdc-card__primary-action card-content">
+
+<!--DESKTOP-->
+    <div class="mdc-card__primary-action card-content" fxShow.lg="true" fxShow="false" >
       <div class="mdl-card__title card-middle-bar ">
         <h2 class="mdl-card__title-text">{{ title }}</h2>
       </div>
@@ -13,8 +15,19 @@
       </div>
     </div>
 
+<!--MOBILE-->
+    <div class="mdc-card__primary-action card-content" fxShow.lt-md="true" fxShow="false" >
+      <div class="mdl-card__title card-middle-bar card-middle-bar-mobile-title">
+        <h2 class="mdl-card__title-text">{{ title }}</h2>
+      </div>
 
-    <div class="mdc-card__actions card-action-bar">
+      <div *ngIf="supportingText" class="mdl-card__supporting-text card-middle-bar card-middle-bar-mobile-subtitle">
+        <p>{{ supportingText }}</p>
+      </div>
+    </div>
+
+<!--DESKTOP-->
+    <div class="mdc-card__actions card-action-bar" fxShow.lg="true" fxShow="false" >
       <div class="mdc-card__action-buttons">
         <a href="{{ targetLink }}" target="_blank" style="text-decoration: none;">
           <button class="mdc-button mdc-card__action-buttons mdc-card__action--button" >
@@ -23,11 +36,29 @@
         </a>
       </div>
 
-    <div class="mdc-card__action-icons">
-      <a href="{{ targetLink }}" target="_blank">
-        <mat-icon class="card-icons card-action-bar-elements">{{icon}}</mat-icon>
-      </a>
+      <div class="mdc-card__action-icons">
+        <a href="{{ targetLink }}" target="_blank">
+          <mat-icon class="card-icons card-action-bar-elements">{{icon}}</mat-icon>
+        </a>
+      </div>
+
     </div>
+
+<!--MOBILE-->
+    <div class="mdc-card__actions card-action-bar" fxShow.lt-md="true" fxShow="false">
+      <div class="mdc-card__action-buttons">
+        <a href="{{ targetLink }}" target="_blank" style="text-decoration: none;">
+          <button class="mdc-button mdc-card__action-buttons mdc-card__action--button card-action-bar-mobile" >
+            <span class="mdc-button__label card-button card-action-bar-elements" >{{ buttonText }}</span>
+          </button>
+        </a>
+      </div>
+
+      <div class="mdc-card__action-icons">
+        <a href="{{ targetLink }}" target="_blank">
+          <mat-icon class="card-icons card-action-bar-elements">{{icon}}</mat-icon>
+        </a>
+      </div>
 
     </div>
 
