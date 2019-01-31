@@ -20,7 +20,22 @@
 
 .title {
   font-family: 'Coiny', cursive;
-  font-size: 2 vw;
+  font-size: 30px;
   margin-left: -10px;
   color: cornflowerblue;
 }
+
+.title.subtitle {
+  font-size: 20px;
+  color: pink;
+}
+
+.title.small-device {
+  font-size: 20px;
+}
+
+.subtitle.small-device {
+  font-size: 10px;
+}
+
+

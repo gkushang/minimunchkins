@@ -3,12 +3,42 @@
   <div class="mdc-top-app-bar__row" >
 
     <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-      <img class="logo" src="assets/logo-only-transparant.png" fxShow.sm="true"  fxShow.gt-md="true" fxShow="false"/>
-      <img class="mini-logo" src="assets/logo-only-transparant.png" fxShow.sm="false"  fxShow.gt-md="false" fxShow="true"/>
-      <span class="mdc-top-app-bar__title title">Mini Munchkins</span>
-      <span class="mdc-top-app-bar__title title" style="font-size: 2vw; color: pink">Family Daycare</span>
+      <img class="logo" src="assets/logo-only-transparant.png"
+           fxShow.lg="true"
+           fxShow="false" >
+
+      <img class="mini-logo" src="assets/logo-only-transparant.png"
+           fxShow.lt-md="true"
+           fxShow="false">
+
+      <span class="mdc-top-app-bar__title title"
+            fxShow.lg="true"
+            fxShow="false"
+
+      >Mini Munchkins</span>
+
+      <span class="mdc-top-app-bar__title title small-device"
+
+            fxShow.lt-md="true"
+            fxShow="false">
+
+      Mini Munchkins</span>
+
+      <span class="mdc-top-app-bar__title title subtitle"
+            fxShow.lg="true"
+            fxShow="false" >
+        Family Daycare</span>
+
+      <span class="mdc-top-app-bar__title title subtitle small-device"
+            fxShow.lt-md="true"
+            fxShow="false">
+        Family Daycare</span>
+
     </section>
-    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" fxShow.sm="true"  fxShow.gt-md="true" fxShow="false" role="toolbar">
+
+    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar"
+             fxShow.lg="true"
+             fxShow="false" >
 
       <a href="#" class="mdc-top-app-bar__action-item menu-links">
         <i class="material-icons" style="margin-right: 5px;">home</i>Home
@@ -40,7 +70,10 @@
     </a>
   </mat-menu>
 
-  <section id="menu-dots" class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start" fxShow.sm="false"  fxShow.gt-md="false" fxShow="true">
+  <section id="menu-dots" class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start"
+           fxShow.lt-md="true"
+           fxShow="false"
+  >
     <a href="#" class="material-icons mdc-top-app-bar__navigation-icon" [matMenuTriggerFor]="appMenu">menu</a>
   </section>
 
