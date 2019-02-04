@@ -15,7 +15,7 @@
 }
 
 .mdc-card:hover {
-  opacity: 1;
+  opacity: 0.8;
 }
 
 .card {
@@ -46,7 +46,8 @@
   font-size: 10px;
 }
 .card-action-bar-elements {
-  color: lightgreen;
+  color: blueviolet;
+  padding-right: 10px;
 }
 
 .mdc-card__media-content {
