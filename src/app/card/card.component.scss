@@ -17,6 +17,21 @@
   letter-spacing: 1px;
 }
 
+.image-title {
+  background: url("/assets/heading1.png") no-repeat 0 0 ;
+  font: 13px/25px  'Baloo Bhaijaan', cursive;
+  color: #fff;
+  padding: 0;
+  display: block;
+  text-transform: uppercase;
+  float: left;
+  position: absolute;
+  left: -2px;
+  top: 15px;
+  width: 142px;
+  text-align: center;
+}
+
 .mdl-card__media > img {
   max-width: 100%;
 }
@@ -33,11 +48,10 @@
 }
 
 .card-middle-bar {
-  font-family: "Josefin Slab", serif;
+  font-family: 'Baloo Bhaijaan', cursive;
   padding-left: 0.8rem;
-  font-weight: bold;
   letter-spacing: 0.2px;
-  color: darkgreen;
+  color: #be1abe ;
   font-size: 0.8vw;
 }
 
