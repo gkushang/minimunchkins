@@ -15,7 +15,7 @@
 }
 
 .logo {
-  width: 100px;
+  width: 90px;
 }
 
 .mini-logo {
@@ -26,7 +26,6 @@
 .title {
   font-family: 'Coiny', cursive;
   font-size: 30px;
-  margin-left: -10px;
   color: cornflowerblue;
 }
 
@@ -46,6 +45,7 @@
 
 .title.subtitle.small-device {
   font-size: 10px;
+  margin-left: -10px;
 }
 
 .title.subtitle.medium-device {
