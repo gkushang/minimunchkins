@@ -2,7 +2,7 @@
 
 .card-content {
   margin-top: -20px;
-  background-color:  rgba(211, 211, 211, 0.9);
+  background-color:  rgba(211, 211, 211, 0.8);
 }
 
 .mdl-card__media {
@@ -16,6 +16,9 @@
 
 .mdc-card:hover {
   opacity: 0.8;
+  .card-content {
+    background-color:  white;
+  }
 }
 
 .card {
@@ -29,13 +32,16 @@
 
 
 .card-middle-bar {
+  font-family: "Josefin Slab", serif;
   padding-left: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 0.2px;
   color: darkgreen;
-  font-size: 12px;
+  font-size: 0.8vw;
 }
 
 .card-middle-bar-mobile-title {
-  font-size: 6px;
+  font-size: 2.4vw;
 }
 
 .card-middle-bar-mobile-subtitle {
