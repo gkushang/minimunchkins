@@ -7,11 +7,11 @@ const ripples = [].map.call(document.querySelectorAll(selector), function(el) {
 });
 
 @Component({
-  selector: 'app-google-map',
-  templateUrl: './google-map.component.html',
-  styleUrls: ['./google-map.component.scss']
+  selector: 'app-contact-grid',
+  templateUrl: './contact-grid.component.html',
+  styleUrls: ['./contact-grid.component.scss']
 })
-export class GoogleMapComponent implements OnInit {
+export class ContactGridComponent implements OnInit {
 
   constructor() { }
 
