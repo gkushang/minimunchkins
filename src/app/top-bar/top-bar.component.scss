@@ -22,6 +22,7 @@
   width: 65px;
 }
 
+
 .title {
   font-family: 'Coiny', cursive;
   font-size: 30px;
@@ -29,17 +30,26 @@
   color: cornflowerblue;
 }
 
+.title.small-device {
+  font-size: 20px;
+}
+
+.title.medium-device {
+  font-size: 25px;
+}
+
+
 .title.subtitle {
   font-size: 20px;
   color: pink;
 }
 
-.title.small-device {
-  font-size: 20px;
+.title.subtitle.small-device {
+  font-size: 10px;
 }
 
-.subtitle.small-device {
-  font-size: 10px;
+.title.subtitle.medium-device {
+  font-size: 15px;
 }
 
 .quick-float {
