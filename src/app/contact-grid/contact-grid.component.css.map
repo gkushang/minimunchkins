@@ -1,7 +1,7 @@
 {
 "version": 3,
 "mappings": "AACA,WAAY;EACV,SAAS,EAAE,MAAM;EACjB,OAAO,EAAE,IAAI;EACb,UAAU,EAAE,KAAK;;AAGnB,oBAAqB;EACnB,MAAM,EAAE,KAAK;EACb,eAAe,EAAE,gBAAgB;EACjC,UAAU,EAAE,0BAA0B",
-"sources": ["google-map.component.scss"],
+"sources": ["contact-grid.component.scss"],
 "names": [],
-"file": "google-map.component.css"
+"file": "contact-grid.component.css"
 }
