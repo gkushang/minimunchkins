@@ -34,8 +34,9 @@ $angular-first-steps-theme: mat-light-theme($angular-first-steps-primary, $angul
 
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; scroll-behavior: smooth; }
+html, body { height: 100%;  scroll-behavior: smooth;}
 body {
+  scroll-behavior: smooth;
   margin: 0;
   font-family: 'Josefin Slab', serif;
   //font-family: 'Butterfly Kids', cursive;
