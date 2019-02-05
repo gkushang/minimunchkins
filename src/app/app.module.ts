@@ -17,6 +17,7 @@ import { CarouselTileComponent } from './carousel-tile/carousel.tile.component';
 import { NguCarouselModule } from '@ngu/carousel';
 import { ContactGridComponent } from './contact-grid/contact-grid.component';
 import { CardComponent } from './card/card.component';
+import { BottomBarComponent } from './bottom-bar/bottom-bar.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { CardComponent } from './card/card.component';
     TopBarComponent,
     CarouselTileComponent,
     ContactGridComponent,
-    CardComponent
+    CardComponent,
+    BottomBarComponent
   ],
   imports: [
     BrowserModule,
